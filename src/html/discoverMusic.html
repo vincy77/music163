@@ -1,0 +1,234 @@
+<div ng-controller="discoverMusicCtrl" class="discover-music">
+    <div class="m-carousel">
+        <div uib-carousel active="v.carousel.active" interval="v.carousel.myInterval" no-wrap="v.carousel.noWrapSlides">
+            <div uib-slide ng-repeat="slide in v.carousel.slides track by slide.id" index="slide.id">
+                <img class="carousel-img" ng-src="{{slide.image}}">
+                <div class="carousel-caption">
+                    <h4>Slide {{slide.id}}</h4>
+                    <p>{{slide.text}}</p>
+                </div>
+            </div>
+            <div class="download-app">
+                <img class="download-img" src="./src/static/images/download.png">
+                <a class="download">
+                    <img class="download-iocn" src="./src/static/images/download-icon.png">
+                </a>
+                <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+            </div>
+        </div>
+    </div>
+    <div class="discover-module">
+        <div class="m-module">
+            <div class="n-rcmd">
+                <div class="discover-nav">
+                    <a class="hot" ui-sref="app.discover.playlist"><span>◎</span>热门推荐</a>
+                    <button ng-click="f.test()">test</button>
+                    <ul class="hot-type">
+                        <li class="hot-type-item" ng-repeat="item in v.hot">
+                            <a ui-sref="app.discover.playlist({type: item.key})" class="hot-type-title" ng-bind="item.value" ng-href="item.url"></a>
+                        </li>
+                    </ul>
+                    <span class="more">
+                        <a ui-sref="app.discover.playlist">更多<span>➔</span></a>
+                    </span>
+                </div>
+                <ul class="play-list">
+                    <li class="play-list-item" ng-repeat="item in v.playlist">
+                        <div class="play-detail">
+                            <img class="play-img" ng-src="{{item.picUrl}}"/>
+                        </div>
+                        <a class="f-title f-thide2">{{item.name}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="n-rcmd">
+                <div class="discover-nav">
+                    <a class="hot"><span>◎</span>个性化推荐</a>
+                </div>
+                <ul class="recommend">
+                    <li class="recommend-item recommend-date">
+                        <a class="date">
+                            <span class="week">星期二</span>
+                            <span class="time">2</span>
+                        </a>
+                        <p class="dec">每日歌曲推荐</p>
+                        <p class="idv f-desc">根据你的口味生成，<br/>每天6:00更新</p>
+                    </li>
+                    <li class="recommend-item" ng-repeat="item in v.recommend">
+                        <div class="play-detail">
+                            <img class="play-img" ng-src="{{item.img}}"/>
+                        </div>
+                        <a class="f-title">2017年四月最热新歌TOP50</a>
+                        <p class="f-desc f-thide3">根据你收藏的歌单根据你收藏的歌单《「粤语」时间是一扇颠沛流离的大门》推荐</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-music-ad">
+                <div class="m-ad">
+                    <img class="ad-img"/>
+                </div>
+            </div>
+            <div class="m-new">
+                <div class="discover-nav">
+                    <a class="hot" ui-sref="app.discover.album"><span>◎</span>新碟上架</a>
+                    <span class="more">
+                        <a ui-sref="app.discover.playlist">更多<span>➔</span></a>
+                    </span>
+                </div>
+                <div class="n-disk">
+                    <div class="inner">
+                        <div uib-carousel style="height: 100%;" active="v.carousel.active" interval="v.carousel.myInterval" no-wrap="v.carousel.noWrapSlides">
+                            <div uib-slide ng-repeat="slide in v.test track by slide.id" index="slide.id">
+                                <ul style="margin-left: -11px;">
+                                    <li style="width: 118px;height: 150px;margin-left: 11px;" ng-repeat="item in slide.data">
+                                        <a class="album">
+                                            <img ng-src="{{item.img}}" style="height: 100px;width: 100px;"/>
+                                        </a>
+                                        <a class="album-name f-thide">{{item.name}}</a>
+                                        <a class="album-art f-thide">{{item.art}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-bill">
+                <div class="discover-nav">
+                    <a class="hot" ui-sref="app.discover.toplist"><span>◎</span>榜单</a>
+                    <span class="more">
+                        <a ui-sref="app.discover.playlist">更多<span>➔</span></a>
+                    </span>
+                </div>
+                <div class="bill-list">
+                    <div class="blk" ng-repeat="item in v.billList">
+                        <div class="top">
+                            <a class="top-img">
+                                <img ng-src="{{item.img}}">
+                            </a>
+                            <div class="top-info">
+                                <p>{{item.title}}</p>
+                                <i class="iconfont top-icon" title="播放">&#xe793;</i>
+                                <i class="iconfont top-icon" title="收藏">&#xe7a7;</i>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <ol class="">
+                                <li ng-repeat="l in item.list">
+                                    <span>{{$index + 1}}</span>
+                                    <a class="f-thide" ng-mouseenter="v.over = l.id" ng-mouseleave="v.over = ''">
+                                        {{l.name}}
+                                        <div class="oper" ng-class="{'active': v.over === l.id}">
+                                            <i class="iconfont icon" title="播放">&#xe793;</i>
+                                            <i class="iconfont icon" title="添加到播放列表">&#xe6da;</i>
+                                            <i class="iconfont icon" title="收藏">&#xe7a7;</i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ol>
+                            <div class="more">
+                                <a>查看更多></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-info">
+            <div class="my-info">
+                <div class="info">
+                    <a class="user-img">
+                        <img src="">
+                    </a>
+                    <div class="info-detail">
+                        <h4>vincy</h4>
+                        <p>777</p>
+                        <div>
+                            <button>签到</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="dny">
+                    <li class="dny-item">
+                        <strong>0</strong>
+                        <p>动态</p>
+                    </li>
+                    <li class="dny-item">
+                        <strong>0</strong>
+                        <p>关注</p>
+                    </li>
+                    <li class="dny-item">
+                        <strong>0</strong>
+                        <p>粉丝</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="n-singer">
+                <h3>
+                    <span>入驻歌手</span>
+                    <a>查看全部</a>
+                </h3>
+                <ul class="n-enter">
+                    <li class="enter-item" ng-repeat="item in v.enterSinger">
+                        <a class="singer-img">
+                            <img ng-src="{{item.img}}">
+                        </a>
+                        <div class="singer-info">
+                            <h4>羽泉组合</h4>
+                            <p class="f-thide">著名音乐节目主持人著名音乐节目主持人</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="apply">申请成为入驻歌手</a>
+            </div>
+            <div class="n-dj">
+                <h3>热门DJ</h3>
+                <ul class="hot-dj">
+                    <li class="hot-dj-item" ng-repeat="item in v.enterSinger">
+                        <a class="dj-img">
+                            <img ng-src="{{item.picUrl}}">
+                        </a>
+                        <div class="dj-info">
+                            <a class="f-thide">{{item.program.dj.nickname}}</a><span class="v">V</span>
+                            <p class="f-thide">{{item.copywriter}}</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .m-new .carousel-inner{
+        width: 654px;
+        height: 180px;
+        margin-left: 16px;
+    }
+    .m-new .carousel-inner .item{
+        margin-top: 28px;
+    }
+    .m-new .carousel-control{
+        width: 16px;
+    }
+    .m-new .glyphicon-chevron-left{
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        font-size: 16px;
+    }
+    .m-new .glyphicon-chevron-right{
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        font-size: 16px;
+    }
+    .m-new .left{
+        background-image: none;
+    }
+    .m-new .right{
+        background-image: none;
+    }
+    .m-new .carousel-indicators{
+        display: none;
+    }
+</style>

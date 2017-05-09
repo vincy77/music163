@@ -1,0 +1,25 @@
+<div ng-controller="loginCtrl">
+    <input type="text" ng-model="v.username">
+    <input type="text" ng-model="v.password">
+    <button ng-click="f.login()">login</button>
+    <button>cancel</button>
+</div>
+<script>
+    app.controller('loginCtrl', function ($scope) {
+        $scope.v = {
+            username: '',
+            password: ''
+        };
+        $scope.f = {
+            login: login
+        };
+
+        function login() {
+            var data = {
+                username: $scope.v.username,
+                password: $scope.v.password,
+                rememberLogin: true
+            }
+        }
+    });
+</script>

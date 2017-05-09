@@ -1,0 +1,263 @@
+.g-search{
+  .g-wrap{
+    //padding: 40px;
+    .n-search{
+      width: 420px;
+      height: 40px;
+      margin: 0 auto;
+      background-position: 0 0;
+      z-index: 10;
+      .search-inp{
+        height: 40px;
+        width: 360px;
+        padding: 0 0 0 20px;
+      }
+      .search-icon{
+        display: inline-block;
+        position: absolute;
+        height: 40px;
+        width: 50px;
+        border: 1px solid #ccc;
+        border-left: none;
+        text-align: center;
+        line-height: 40px;
+        background-color: #f2f2f2;
+        i{
+          font-size: 20px;
+          color: #aaa;
+          font-weight: bold;
+        }
+      }
+      .search-icon:hover{
+        background-color: #fff;
+        i{
+          color: #ccc;
+        }
+      }
+    }
+    .m-search{
+      text-align: center;
+      .search-info{
+        margin: 28px 0 17px;
+        font-size: 12px;
+        color: #999;
+        text-align: left;
+      }
+      .search-tab{
+        height:39px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        .tab-item{
+          width: 112px;
+          height: 39px;
+          line-height: 39px;
+          text-align: center;
+          a{
+            display: inline-block;
+            height:100%;
+            width: 100%;
+          }
+        }
+        .tab-item:hover{
+          border-top:2px solid red;
+          margin-top: -1px;
+        }
+        .active{
+          background-color: #fff;
+          border-top:2px solid red;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          margin-top: -1px;
+        }
+      }
+      .m-list{
+        width: 900px;
+        height: auto;
+        overflow: auto;
+        margin-top: 20px;
+        text-align: left;
+        .song-list{
+          .even{
+            background-color: #f7f7f7;
+          }
+          .list-item:hover{
+            background-color: #f1f1f1;
+            border:1px solid #ddd;
+          }
+          .list-item{
+            width: 100%;
+            border:1px solid #fff;
+            .song-info{
+              float: left;
+              height: 41px;
+              line-height: 41px;
+              margin-left: 15px;
+              font-size: 12px;
+              color: #333;
+            }
+            .song-title{
+              width: 370px;
+              .icon{
+                color: #aaa;
+                margin-right: 4px;
+                /* font-size: 18px; */
+                font-weight: bold;
+                cursor: pointer;
+              }
+              .icon:hover{
+                color: #555;
+              }
+            }
+            .song-opr{
+              width: 100px;
+              .icon{
+                color: #aaa;
+                margin-right: 4px;
+                /* font-size: 18px; */
+                font-weight: bold;
+                cursor: pointer;
+              }
+              .icon:hover{
+                color: #555;
+              }
+              .song-icon{
+                display: none;
+              }
+              .active{
+                display: block;
+              }
+            }
+
+            .song-singer{
+              width: 15%;
+            }
+            .song-album{
+              width: 18%;
+            }
+            .song-time{}
+          }
+        }
+        .singer-list{
+          margin-left: -20px;
+          .singer-list-item{
+            padding: 0 0 30px 22px;
+            img{
+              height: 130px;
+              width: 130px
+            }
+            p{
+              margin-top: 8px;
+              font-size: 12px;
+              color: #666;
+            }
+          }
+        }
+        .albums-list{
+          margin-left: -33px;
+          .albums-list-item{
+            background: url(/src/static/images/album-background.png) no-repeat;
+            width: 153px;
+            height: 178px;
+            background-size: contain;
+            margin: 0 0 30px 33px;
+            img{
+              height: 130px;
+              width: 130px;
+            }
+            h4{
+              font-size: 14px;
+              font-weight: 400;
+            }
+            p{
+              margin-top: 8px;
+              font-size: 12px;
+              color: #666;
+            }
+          }
+        }
+        .play-list{
+          .even{
+            background-color: #f7f7f7;
+          }
+          .play-list-item:hover{
+            background-color: #f1f1f1;
+            border:1px solid #ddd;
+            .title{
+              width: 300px!important;
+            }
+          }
+          .play-list-item{
+            width: 100%;
+            border:1px solid #fff;
+            .play-start{
+              width: 25px;
+              .icon{
+                color: #aaa;
+                margin-right: 4px;
+                /* font-size: 18px; */
+                font-weight: bold;
+                cursor: pointer;
+              }
+              .icon:hover{
+                color: #555;
+              }
+            }
+            .play-info{
+              float: left;
+              height: 60px;
+              line-height: 60px;
+              padding:0 10px;
+              font-size: 12px;
+              color: #999;
+            }
+            .play-img{
+              //margin: -1px 10px;
+              img{
+                height: 50px;
+                width: 50px;
+              }
+            }
+            .play-title{
+              width: 390px;
+              color: #555;
+              .title{
+                width: 100%;
+                display: inline-block;
+              }
+              .play-icon{
+                float: right;
+                display: none;
+                .icon{
+                  color: #aaa;
+                  margin-right: 4px;
+                  /* font-size: 18px; */
+                  font-weight: bold;
+                  cursor: pointer;
+                }
+                .icon:hover{
+                  color: #555;
+                }
+              }
+              .active{
+                display: block;
+              }
+            }
+            .play-amount{
+              width: 66px;
+            }
+            .play-user{
+              width: 15%;
+              color: #555;
+            }
+            .play-collect{
+              width: 100px;
+            }
+            .play-count{
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

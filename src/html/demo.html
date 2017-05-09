@@ -1,0 +1,25 @@
+<div class="content-wrap api-demo" ng-controller="ctrlDemo">
+    <input type="text" ng-model="form.city"/>
+    <button ng-click="f.searchW()">查询</button>
+    <div ng-show="data">
+        <p>{{data.currentCity}}</p>
+        <ul>
+            <li class="weather" ng-repeat="t in data.weather_data">
+                <span>{{t.data}}</span>
+                <span>{{t.temperature}}</span>
+                <span>{{t.weather}}</span>
+                <span>{{t.wind}}</span>
+                <img ng-src="{{t.dayPictureUrl}}" />
+                <img ng-src="{{t.nightPictureUrl}}"/>
+            </li>
+        </ul>
+        <ul>
+            <li ng-repeat="item in data.index">
+                <p>{{item.title}}</p>
+                <p>{{item.tipt}}</p>
+                <p>{{item.zs}}</p>
+                <p>{{item.des}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

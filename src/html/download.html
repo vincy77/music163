@@ -1,0 +1,15 @@
+<div ng-controller="downloadCtrl" class="g-download">
+    <div class="n-banner">
+        <div class="m-carousel">
+            <div uib-carousel active="v.carousel.active" interval="v.carousel.myInterval" no-wrap="v.carousel.noWrapSlides">
+                <div uib-slide ng-repeat="slide in v.carousel.slides track by slide.id" index="slide.id">
+                    <img class="carousel-img" ng-src="{{slide.image}}">
+                    <div class="carousel-caption">
+                        <h4>Slide {{slide.id}}</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="m-topbar" ng-controller="headerCtrl">
+    <div class="m-top">
+        <div class="logo">
+            <img class="logo-img" src="./src/static/images/logo2.png">
+        </div>
+        <ul class="m-nav">
+            <li class="m-nav-item" ng-repeat="item in nav.data" ng-click="nav.change($index)" ng-class="{'active': item.key == nav.current.key}">
+                <span ng-bind="item.value"></span>
+            </li>
+        </ul>
+        <div class="search">
+            <div class="search-item">
+                <input class="search-inp" type="text" ng-model="v.keyword" ng-keydown="f.search($event)"/>
+                <i class="iconfont search-icon">&#xe65c;</i>
+            </div>
+            <img class="user-logo" src=""/>
+        </div>
+    </div>
+    <div class="m-subNav other-nav" ng-show="nav.current.key != 0">
+
+    </div>
+    <div class="m-subNav" ng-show="nav.current.key == 0">
+        <ul class="sub-nav">
+            <li class="sub-nav-item" ng-repeat="item in subNav.data" ng-click="subNav.change($index)">
+                <span ng-class="{'active': item.key == subNav.current.key}" ng-bind="item.value"></span>
+            </li>
+        </ul>
+    </div>
+</div>

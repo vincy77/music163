@@ -1,0 +1,108 @@
+<div ng-controller="searchCtrl" class="g-search g-bg">
+    <div class="g-wrap">
+        <!--搜索-->
+        <div class="n-search">
+            <input type="text" class="search-inp" ng-model="v.keyword" ng-keydown="f.enterSearch($event)"/>
+            <a class="search-icon" ng-click="f.search()"><i class="iconfont">&#xe65c;</i></a>
+        </div>
+        <div class="m-search">
+            <p class="search-info">搜索{{v.search}}，共找到<span>{{pagination.totalItems}}</span>{{tab.current.desc}}</p>
+            <!--tab分类-->
+            <ul class="search-tab">
+                <li class="tab-item" ng-repeat="item in tab.data"
+                    ng-class="{'active': item.key == tab.current.key}"
+                    ng-click="tab.change($index)">
+                    <a>{{item.value}}</a>
+                </li>
+            </ul>
+            <!--单曲-->
+            <div class="m-list">
+                <ul class="song-list" ng-if="tab.current.key == 1">
+                    <li class="list-item" ng-repeat="item in v.songlist"
+                        ng-class="{'even': (($index + 1) % 2 ==0)}"
+                        ng-mouseenter="v.over = item.id" ng-mouseleave="v.over = ''">
+                        <div class="song-info song-title f-thide">
+                            <i class="iconfont icon" title="播放">&#xe793;</i>
+                            {{item.name}}<span ng-if="item.transNames[0]">-({{item.transNames[0]}})</span></div>
+                        <div class="song-info song-opr">
+                            <div class="song-icon" ng-class="{'active': v.over === item.id}">
+                                <i class="iconfont icon" title="添加到播放列表">&#xe6da;</i>
+                                <i class="iconfont icon" title="收藏">&#xe7a7;</i>
+                                <i class="iconfont icon" title="分享">&#xe6ea;</i>
+                                <i class="iconfont icon" title="下载">&#xe703;</i>
+                            </div>
+                        </div>
+                        <div class="song-info song-singer f-thide">{{item.artists[0].name}}</div>
+                        <div class="song-info song-album f-thide">《{{item.album.name}}》</div>
+                        <div class="song-info song-time">04:30</div>
+                    </li>
+                </ul>
+                <!--歌手-->
+                <ul class="singer-list" ng-if="tab.current.key == 100">
+                    <li class="singer-list-item" ng-repeat="item in v.songlist">
+                        <img ng-src="{{item.picUrl}}">
+                        <p>{{item.name}}</p>
+                    </li>
+                </ul>
+                <!--专辑-->
+                <ul class="albums-list" ng-if="tab.current.key == 10">
+                    <li class="albums-list-item" ng-repeat="item in v.songlist">
+                        <img ng-src="{{item.picUrl}}">
+                        <h4 class="f-thide">{{item.name}}</h4>
+                        <p class="f-thide">{{item.artist.name}}</p>
+                    </li>
+                </ul>
+                <!--歌单-->
+                <ul class="play-list" ng-if="tab.current.key == 1000">
+                    <li class="play-list-item" ng-repeat="item in v.songlist"
+                        ng-class="{'even': (($index + 1) % 2 ==0)}"
+                        ng-mouseenter="v.over = item.id" ng-mouseleave="v.over = ''">
+                        <div class="play-info play-start">
+                            <i class="iconfont icon" title="播放">&#xe793;</i>
+                        </div>
+                        <div class="play-info play-img">
+                            <img ng-src="{{item.coverImgUrl}}">
+                        </div>
+                        <div class="play-info play-title">
+                            <span class="f-thide title">{{item.name}}</span>
+                            <div class="play-icon" ng-class="{'active': v.over === item.id}">
+                                <i class="iconfont icon" title="添加到播放列表">&#xe6da;</i>
+                                <i class="iconfont icon" title="收藏">&#xe7a7;</i>
+                                <i class="iconfont icon" title="分享">&#xe6ea;</i>
+                            </div>
+                        </div>
+
+                        <div class="play-info play-amount">{{item.trackCount}}首</div>
+                        <div class="play-info play-user f-thide">by {{item.creator.nickname}}</div>
+                        <div class="play-info play-collect">收藏：{{item.bookCount | count}}</div>
+                        <div class="play-info play-count">收听：{{item.playCount | count}}</div>
+                    </li>
+                </ul>
+            </div>
+            <!--分页-->
+            <ul uib-pagination boundary-links="false" total-items="pagination.totalItems"
+                max-size="pagination.maxSize" items-per-page="pagination.pageSize"
+                ng-model="pagination.currentPage" class="pagination-sm"
+                boundary-link-numbers="true"
+                first-text="首页" last-text="末页" previous-text="<上一页" next-text="下一页>">
+
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    .pagination > li{
+        margin: 0 2px;
+    }
+    .pagination-sm > li > a, .pagination-sm > li > span{
+        height: 22px;
+        line-height: 22px;
+        padding: 0 8px;
+        color: #666;
+        border-radius: 2px;
+    }
+    .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+        background: url(/src/static/images/pagination.png);
+        border:none;
+    }
+</style>

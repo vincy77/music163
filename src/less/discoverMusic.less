@@ -1,0 +1,514 @@
+.discover-music{
+  .m-carousel{
+    height: 336px;
+    .carousel-inner{
+      width: 982px;
+      left: calc(~'(100% - 982px) / 2');
+      .item{
+        width: 730px;
+        .carousel-img{
+          margin:auto;
+          width:730px;
+          height: 336px;
+        }
+      }
+      .download-app{
+        width: 254px;
+        height: 100%;
+        background-color: #555;
+        position: absolute;
+        top: 0;
+        right: 0;
+        .download-img{
+          width: 252px;
+        }
+        .download{
+          width: 218px;
+          height: 58px;
+          opacity: 0;
+          position: absolute;
+          bottom: 65px;
+          left: 16px;
+          .download-iocn{
+            width: 218px;
+            height: 58px;
+          }
+        }
+        .download:hover{
+          opacity: 1;
+        }
+        p{
+          position: absolute;
+          bottom: 30px;
+          width: 100%;
+          font-size: 12px;
+          text-align: center;
+          color: #8d8d8d;
+        }
+      }
+    }
+    .carousel-control{
+      width: calc(~'(100% - 982px) / 2');
+    }
+    .carousel-indicators{
+      left: calc(~'(100% - 252px) / 2');
+    }
+  }
+  .discover-module{
+    position: relative;
+    width: 980px;
+    //min-height: 700px;
+    overflow: auto;
+    _height: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+    .play-detail{
+      .play-img{
+        height: 140px;
+        width: 140px;
+      }
+    }
+    .f-title{
+      display: block;
+      font-size: 14px;
+      margin: 8px 0 3px;
+    }
+    .f-desc{
+      font-size: 12px;
+      color: #999;
+    }
+    .m-module{
+      //position: relative;
+      padding: 20px 19px 40px;
+      margin-right: 250px;
+      overflow: auto;
+      border-right: 1px solid #ccc;
+      .discover-nav{
+        height: 33px;
+        padding: 0 10px;
+        border-bottom: 2px solid #C10D0C;
+        .hot{
+          float: left;
+          line-height: 28px;
+          font-size: 20px;
+          color: #333;
+          span{
+            font-size: 16px;
+            color: #C10D0C;
+            margin-right: 10px;
+          }
+        }
+        .hot-type{
+          float: left;
+          margin: 7px 0 0 20px;
+          .hot-type-item{
+            position: relative;
+            line-height: 16px;
+            padding: 0 20px;
+            font-size: 12px;
+            a{
+              color: #666;
+            }
+          }
+          .hot-type-item:before{
+            content: '';
+            position: absolute;
+            display: block;
+            top: 3px;
+            left: 0;
+            height: 10px;
+            width: 1px;
+            background-color: #aaa;
+          }
+          .hot-type-item:first-child:before{
+            content: none;
+          }
+        }
+        .more{
+          margin-top: 7px;
+          float: right;
+          a{
+            color: #666;
+            font-size: 12px;
+            span{
+              font-size: 12px;
+              font-weight: 600;
+              color: #C10D0C;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      .play-list{
+        margin-left: -42px;
+        margin-top: 20px;
+        overflow: auto;
+        .play-list-item{
+          width: 140px;
+          height: 204px;
+          margin-left: 42px;
+          margin-bottom: 30px;
+        }
+      }
+      .recommend{
+        margin-top: 20px;
+        margin-left: -42px;
+        overflow: auto;
+        .recommend-item{
+          width: 140px;
+          height: 235px;
+          margin-left: 42px;
+          margin-bottom: 30px;
+        }
+        .recommend-date{
+          height: 203px;
+          background-color: #fff;
+          .date{
+            height: 140px;
+            width: 140px;
+            display: block;
+            background: url(/src/static/images/time-background.png);
+            border-radius: 10px;
+            background-size:contain;
+            border: 1px solid #ccc;
+            .week{
+              display: block;
+              height: 33px;
+              line-height: 33px;
+              width: 140px;
+              text-align: center;
+              color: #fed9d9;
+              font-size: 14px;
+            }
+            .time{
+              display: block;
+              width: 138px;
+              height: 105px;
+              border-radius: 0 0 10px 10px;
+              text-align: center;
+              line-height: 105px;
+              color: #202020;
+              font-size: 94px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              background: url(/src/static/images/date-background.png);
+              background-size: contain;
+            }
+          }
+          .dec{
+            margin: 8px 0 3px;
+            font-size: 14px;
+            color: #333;
+          }
+          .idv{
+
+          }
+        }
+      }
+      .m-music-ad{
+        margin-bottom: 35px;
+        .m-ad{
+          height: 78px;
+          width: 100%;
+          background-color: #ccc;
+        }
+      }
+      .m-new{
+        .n-disk{
+          position: relative;
+          zoom: 1;
+          height: 186px;
+          margin: 20px 0 37px;
+          border: 1px solid #d3d3d3;
+          .inner{
+            height: 184px;
+            //padding-left: 16px;
+            background: #f5f5f5;
+            border: 1px solid #fff;
+            //.roll{
+            //  float: left;
+            //  width: 645px;
+            //  height: 180px;
+            //  overflow: hidden;
+            //  position: relative;
+            //}
+            .album{
+              display: block;
+              height: 100px;
+              width: 118px;
+              background: url(/src/static/images/album-background.png);
+              background-size: contain;
+              text-align: left;
+            }
+            .album-name{
+              display: block;
+              width: 100px;
+              height: 18px;
+              line-height: 18px;
+              text-align: left;
+              margin-left: 10px;
+            }
+            .album-art{
+              display: block;
+              width: 100px;
+              height: 18px;
+              line-height: 18px;
+              text-align: left;
+              color: #666;
+              margin-left: 10px;
+
+            }
+          }
+        }
+      }
+      .m-bill{
+        .bill-list{
+          height: 472px;
+          margin-top: 20px;
+          padding-left: 1px;
+          background: url(/src/static/images/index_bill.png);
+          .blk{
+            width: 229px;
+            float: left;
+            .top{
+              height: 100px;
+              margin: 20px 0 0 20px;
+              .top-img{
+                float: left;
+                img{
+                  height: 80px;
+                  width: 80px;
+                }
+              }
+              .top-info{
+                width: 116px;
+                margin: 6px 0 0 10px;
+                float: left;
+                .top-icon{
+                  font-size: 24px;
+                  color: #aaa;
+                  font-weight: 600;
+                  margin-right: 8px;
+                  cursor: pointer;
+                }
+              }
+            }
+            .list{
+              width: 229px;
+              height: 352px;
+              ol{
+                li{
+                  height: 32px;
+                  margin-left: 15px;
+                  position: relative;
+                  span{
+                    position: absolute;
+                    left: 0;
+                    display: inline-block;
+                    height: 32px;
+                    line-height: 32px;
+                    width: 35px;
+                    text-align: center;
+                    font-size: 16px;
+                  }
+                  a{
+                    position: absolute;
+                    left: 35px;
+                    display: inline-block;
+                    height: 32px;
+                    line-height: 32px;
+                    width: 170px;
+                    font-size: 12px;
+                  }
+                  a:hover{
+                    padding-right: 90px;
+                  }
+                  .oper{
+                    display: none;
+                    width: 82px;
+                    height:auto;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    .icon{
+                      font-size: 20px;
+                      font-weight: 600;
+                      color: #aaa;
+                      margin-left: 5px;
+                    }
+                  }
+                  .active{
+                    display: block;
+                  }
+                }
+              }
+              .more{
+                height: 32px;
+                margin-right: 32px;
+                text-align: right;
+                line-height: 32px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .user-info{
+      position: absolute;
+      right: 0;
+      top:0;
+      width: 250px;
+      zoom: 1;
+      .my-info{
+        height: 185px;
+        padding-top: 20px;
+        background-color: #f2f2f2;
+        .info{
+          .user-img{
+            float: left;
+            margin-left: 20px;
+            img{
+              height:80px;
+              width: 80px;
+            }
+          }
+          .info-detail{
+            float: left;
+            margin-left: 20px;
+          }
+        }
+        .dny{
+          padding-top: 22px;
+          clear: both;
+          .dny-item{
+            height: 40px;
+            padding: 0 18px;
+            border-right: 1px solid #ccc;
+            strong{
+              font-size: 20px;
+              color: #666;
+            }
+            p{
+              font-size: 12px;
+              color: #666;
+              margin-top: -2px;
+            }
+          }
+          .dny-item:last-child{
+            border-right: none;
+          }
+        }
+      }
+      .n-singer{
+        margin-top: 15px;
+        h3{
+          height: 23px;
+          font-size: 100%;
+          color: #333;
+          border-bottom: 1px solid #ccc;
+          margin: 0 20px;
+        }
+        .n-enter{
+          margin: 6px 0 14px 20px;
+          .enter-item{
+            height: 62px;
+            width: 210px;
+            margin-top: 14px;
+            background-color: #fafafa;
+            .singer-img{
+              float: left;
+              img{
+                height: 62px;
+                width: 62px;
+              }
+            }
+            .singer-info{
+              height: 60px;
+              width: 133px;
+              margin-left: 14px;
+              float: left;
+              h4{
+                font-size: 14px;
+              }
+              p{
+                font-size: 12px;
+                width: 90%;
+              }
+            }
+          }
+        }
+        .apply{
+          display: inline-block;
+          margin: 14px 20px;
+          width: 210px;
+          height: 31px;
+          line-height: 31px;
+          text-align: center;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          background-color: #fafafa;
+          font-size: 12px;
+        }
+      }
+      .n-dj{
+        margin-top: 30px;
+        h3{
+          position: relative;
+          height: 23px;
+          margin: 0 20px;
+          border-bottom: 1px solid #ccc;
+          color: #333;
+          font-size: 100%;
+        }
+        .hot-dj{
+           margin: 20px 0 0 20px;
+          .hot-dj-item{
+            height: 50px;
+            width: 210px;
+            .dj-img{
+              float: left;
+              img{
+                height: 40px;
+                width: 40px;
+              }
+            }
+            .dj-info{
+              float: left;
+              width: 160px;
+              line-height: 21px;
+              margin-left: 10px;
+              a{
+                height: 21px;
+                line-height: 21px;
+                font-size: 12px;
+                display: inline-block;
+                max-width: 90%;
+                color: #000;
+              }
+              .v{
+                color: #C10D0C;
+                position: relative;
+                top: -6px;
+                left: 3px;
+                font-size: 17px;
+                font-weight: bold;
+              }
+              p{
+                height: 21px;
+                line-height: 21px;
+                color: #666;
+                font-size: 12px;
+                width: 100%;
+                margin-top: -8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

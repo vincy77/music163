@@ -1,0 +1,487 @@
+.discover-music .m-carousel {
+  height: 336px;
+}
+.discover-music .m-carousel .carousel-inner {
+  width: 982px;
+  left: calc((100% - 982px) / 2);
+}
+.discover-music .m-carousel .carousel-inner .item {
+  width: 730px;
+}
+.discover-music .m-carousel .carousel-inner .item .carousel-img {
+  margin: auto;
+  width: 730px;
+  height: 336px;
+}
+.discover-music .m-carousel .carousel-inner .download-app {
+  width: 254px;
+  height: 100%;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.discover-music .m-carousel .carousel-inner .download-app .download-img {
+  width: 252px;
+}
+.discover-music .m-carousel .carousel-inner .download-app .download {
+  width: 218px;
+  height: 58px;
+  opacity: 0;
+  position: absolute;
+  bottom: 65px;
+  left: 16px;
+}
+.discover-music .m-carousel .carousel-inner .download-app .download .download-iocn {
+  width: 218px;
+  height: 58px;
+}
+.discover-music .m-carousel .carousel-inner .download-app .download:hover {
+  opacity: 1;
+}
+.discover-music .m-carousel .carousel-inner .download-app p {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: #8d8d8d;
+}
+.discover-music .m-carousel .carousel-control {
+  width: calc((100% - 982px) / 2);
+}
+.discover-music .m-carousel .carousel-indicators {
+  left: calc((100% - 252px) / 2);
+}
+.discover-music .discover-module {
+  position: relative;
+  width: 980px;
+  overflow: auto;
+  _height: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-width: 0 1px;
+}
+.discover-music .discover-module .play-detail .play-img {
+  height: 140px;
+  width: 140px;
+}
+.discover-music .discover-module .f-title {
+  display: block;
+  font-size: 14px;
+  margin: 8px 0 3px;
+}
+.discover-music .discover-module .f-desc {
+  font-size: 12px;
+  color: #999;
+}
+.discover-music .discover-module .m-module {
+  padding: 20px 19px 40px;
+  margin-right: 250px;
+  overflow: auto;
+  border-right: 1px solid #ccc;
+}
+.discover-music .discover-module .m-module .discover-nav {
+  height: 33px;
+  padding: 0 10px;
+  border-bottom: 2px solid #C10D0C;
+}
+.discover-music .discover-module .m-module .discover-nav .hot {
+  float: left;
+  line-height: 28px;
+  font-size: 20px;
+  color: #333;
+}
+.discover-music .discover-module .m-module .discover-nav .hot span {
+  font-size: 16px;
+  color: #C10D0C;
+  margin-right: 10px;
+}
+.discover-music .discover-module .m-module .discover-nav .hot-type {
+  float: left;
+  margin: 7px 0 0 20px;
+}
+.discover-music .discover-module .m-module .discover-nav .hot-type .hot-type-item {
+  position: relative;
+  line-height: 16px;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.discover-music .discover-module .m-module .discover-nav .hot-type .hot-type-item a {
+  color: #666;
+}
+.discover-music .discover-module .m-module .discover-nav .hot-type .hot-type-item:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: 0;
+  height: 10px;
+  width: 1px;
+  background-color: #aaa;
+}
+.discover-music .discover-module .m-module .discover-nav .hot-type .hot-type-item:first-child:before {
+  content: none;
+}
+.discover-music .discover-module .m-module .discover-nav .more {
+  margin-top: 7px;
+  float: right;
+}
+.discover-music .discover-module .m-module .discover-nav .more a {
+  color: #666;
+  font-size: 12px;
+}
+.discover-music .discover-module .m-module .discover-nav .more a span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #C10D0C;
+  margin-left: 5px;
+}
+.discover-music .discover-module .m-module .play-list {
+  margin-left: -42px;
+  margin-top: 20px;
+  overflow: auto;
+}
+.discover-music .discover-module .m-module .play-list .play-list-item {
+  width: 140px;
+  height: 204px;
+  margin-left: 42px;
+  margin-bottom: 30px;
+}
+.discover-music .discover-module .m-module .recommend {
+  margin-top: 20px;
+  margin-left: -42px;
+  overflow: auto;
+}
+.discover-music .discover-module .m-module .recommend .recommend-item {
+  width: 140px;
+  height: 235px;
+  margin-left: 42px;
+  margin-bottom: 30px;
+}
+.discover-music .discover-module .m-module .recommend .recommend-date {
+  height: 203px;
+  background-color: #fff;
+}
+.discover-music .discover-module .m-module .recommend .recommend-date .date {
+  height: 140px;
+  width: 140px;
+  display: block;
+  background: url(/src/static/images/time-background.png);
+  border-radius: 10px;
+  background-size: contain;
+  border: 1px solid #ccc;
+}
+.discover-music .discover-module .m-module .recommend .recommend-date .date .week {
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  width: 140px;
+  text-align: center;
+  color: #fed9d9;
+  font-size: 14px;
+}
+.discover-music .discover-module .m-module .recommend .recommend-date .date .time {
+  display: block;
+  width: 138px;
+  height: 105px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  line-height: 105px;
+  color: #202020;
+  font-size: 94px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: url(/src/static/images/date-background.png);
+  background-size: contain;
+}
+.discover-music .discover-module .m-module .recommend .recommend-date .dec {
+  margin: 8px 0 3px;
+  font-size: 14px;
+  color: #333;
+}
+.discover-music .discover-module .m-module .m-music-ad {
+  margin-bottom: 35px;
+}
+.discover-music .discover-module .m-module .m-music-ad .m-ad {
+  height: 78px;
+  width: 100%;
+  background-color: #ccc;
+}
+.discover-music .discover-module .m-module .m-new .n-disk {
+  position: relative;
+  zoom: 1;
+  height: 186px;
+  margin: 20px 0 37px;
+  border: 1px solid #d3d3d3;
+}
+.discover-music .discover-module .m-module .m-new .n-disk .inner {
+  height: 184px;
+  background: #f5f5f5;
+  border: 1px solid #fff;
+}
+.discover-music .discover-module .m-module .m-new .n-disk .inner .album {
+  display: block;
+  height: 100px;
+  width: 118px;
+  background: url(/src/static/images/album-background.png);
+  background-size: contain;
+  text-align: left;
+}
+.discover-music .discover-module .m-module .m-new .n-disk .inner .album-name {
+  display: block;
+  width: 100px;
+  height: 18px;
+  line-height: 18px;
+  text-align: left;
+  margin-left: 10px;
+}
+.discover-music .discover-module .m-module .m-new .n-disk .inner .album-art {
+  display: block;
+  width: 100px;
+  height: 18px;
+  line-height: 18px;
+  text-align: left;
+  color: #666;
+  margin-left: 10px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list {
+  height: 472px;
+  margin-top: 20px;
+  padding-left: 1px;
+  background: url(/src/static/images/index_bill.png);
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk {
+  width: 229px;
+  float: left;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .top {
+  height: 100px;
+  margin: 20px 0 0 20px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .top .top-img {
+  float: left;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .top .top-img img {
+  height: 80px;
+  width: 80px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .top .top-info {
+  width: 116px;
+  margin: 6px 0 0 10px;
+  float: left;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .top .top-info .top-icon {
+  font-size: 24px;
+  color: #aaa;
+  font-weight: 600;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list {
+  width: 229px;
+  height: 352px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li {
+  height: 32px;
+  margin-left: 15px;
+  position: relative;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li span {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  width: 35px;
+  text-align: center;
+  font-size: 16px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li a {
+  position: absolute;
+  left: 35px;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  width: 170px;
+  font-size: 12px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li a:hover {
+  padding-right: 90px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li .oper {
+  display: none;
+  width: 82px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li .oper .icon {
+  font-size: 20px;
+  font-weight: 600;
+  color: #aaa;
+  margin-left: 5px;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list ol li .active {
+  display: block;
+}
+.discover-music .discover-module .m-module .m-bill .bill-list .blk .list .more {
+  height: 32px;
+  margin-right: 32px;
+  text-align: right;
+  line-height: 32px;
+  font-size: 12px;
+}
+.discover-music .discover-module .user-info {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 250px;
+  zoom: 1;
+}
+.discover-music .discover-module .user-info .my-info {
+  height: 185px;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+}
+.discover-music .discover-module .user-info .my-info .info .user-img {
+  float: left;
+  margin-left: 20px;
+}
+.discover-music .discover-module .user-info .my-info .info .user-img img {
+  height: 80px;
+  width: 80px;
+}
+.discover-music .discover-module .user-info .my-info .info .info-detail {
+  float: left;
+  margin-left: 20px;
+}
+.discover-music .discover-module .user-info .my-info .dny {
+  padding-top: 22px;
+  clear: both;
+}
+.discover-music .discover-module .user-info .my-info .dny .dny-item {
+  height: 40px;
+  padding: 0 18px;
+  border-right: 1px solid #ccc;
+}
+.discover-music .discover-module .user-info .my-info .dny .dny-item strong {
+  font-size: 20px;
+  color: #666;
+}
+.discover-music .discover-module .user-info .my-info .dny .dny-item p {
+  font-size: 12px;
+  color: #666;
+  margin-top: -2px;
+}
+.discover-music .discover-module .user-info .my-info .dny .dny-item:last-child {
+  border-right: none;
+}
+.discover-music .discover-module .user-info .n-singer {
+  margin-top: 15px;
+}
+.discover-music .discover-module .user-info .n-singer h3 {
+  height: 23px;
+  font-size: 100%;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  margin: 0 20px;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter {
+  margin: 6px 0 14px 20px;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter .enter-item {
+  height: 62px;
+  width: 210px;
+  margin-top: 14px;
+  background-color: #fafafa;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter .enter-item .singer-img {
+  float: left;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter .enter-item .singer-img img {
+  height: 62px;
+  width: 62px;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter .enter-item .singer-info {
+  height: 60px;
+  width: 133px;
+  margin-left: 14px;
+  float: left;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter .enter-item .singer-info h4 {
+  font-size: 14px;
+}
+.discover-music .discover-module .user-info .n-singer .n-enter .enter-item .singer-info p {
+  font-size: 12px;
+  width: 90%;
+}
+.discover-music .discover-module .user-info .n-singer .apply {
+  display: inline-block;
+  margin: 14px 20px;
+  width: 210px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  font-size: 12px;
+}
+.discover-music .discover-module .user-info .n-dj {
+  margin-top: 30px;
+}
+.discover-music .discover-module .user-info .n-dj h3 {
+  position: relative;
+  height: 23px;
+  margin: 0 20px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-size: 100%;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj {
+  margin: 20px 0 0 20px;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item {
+  height: 50px;
+  width: 210px;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item .dj-img {
+  float: left;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item .dj-img img {
+  height: 40px;
+  width: 40px;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item .dj-info {
+  float: left;
+  width: 160px;
+  line-height: 21px;
+  margin-left: 10px;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item .dj-info a {
+  height: 21px;
+  line-height: 21px;
+  font-size: 12px;
+  display: inline-block;
+  max-width: 90%;
+  color: #000;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item .dj-info .v {
+  color: #C10D0C;
+  position: relative;
+  top: -6px;
+  left: 3px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.discover-music .discover-module .user-info .n-dj .hot-dj .hot-dj-item .dj-info p {
+  height: 21px;
+  line-height: 21px;
+  color: #666;
+  font-size: 12px;
+  width: 100%;
+  margin-top: -8px;
+}

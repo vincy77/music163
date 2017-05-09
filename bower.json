@@ -1,0 +1,26 @@
+{
+  "name": "bos-1.0",
+  "description": "使用gulp搭建angular项目",
+  "main": "app.js",
+  "authors": [
+    "纸飞机"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "angular-bootstrap": "^2.5.0",
+    "angular-animate": "^1.6.4",
+    "angular-sanitize": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}

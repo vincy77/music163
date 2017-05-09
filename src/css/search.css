@@ -1,0 +1,249 @@
+.g-search .g-wrap .n-search {
+  width: 420px;
+  height: 40px;
+  margin: 0 auto;
+  background-position: 0 0;
+  z-index: 10;
+}
+.g-search .g-wrap .n-search .search-inp {
+  height: 40px;
+  width: 360px;
+  padding: 0 0 0 20px;
+}
+.g-search .g-wrap .n-search .search-icon {
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+  width: 50px;
+  border: 1px solid #ccc;
+  border-left: none;
+  text-align: center;
+  line-height: 40px;
+  background-color: #f2f2f2;
+}
+.g-search .g-wrap .n-search .search-icon i {
+  font-size: 20px;
+  color: #aaa;
+  font-weight: bold;
+}
+.g-search .g-wrap .n-search .search-icon:hover {
+  background-color: #fff;
+}
+.g-search .g-wrap .n-search .search-icon:hover i {
+  color: #ccc;
+}
+.g-search .g-wrap .m-search {
+  text-align: center;
+}
+.g-search .g-wrap .m-search .search-info {
+  margin: 28px 0 17px;
+  font-size: 12px;
+  color: #999;
+  text-align: left;
+}
+.g-search .g-wrap .m-search .search-tab {
+  height: 39px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+.g-search .g-wrap .m-search .search-tab .tab-item {
+  width: 112px;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
+}
+.g-search .g-wrap .m-search .search-tab .tab-item a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.g-search .g-wrap .m-search .search-tab .tab-item:hover {
+  border-top: 2px solid red;
+  margin-top: -1px;
+}
+.g-search .g-wrap .m-search .search-tab .active {
+  background-color: #fff;
+  border-top: 2px solid red;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-top: -1px;
+}
+.g-search .g-wrap .m-search .m-list {
+  width: 900px;
+  height: auto;
+  overflow: auto;
+  margin-top: 20px;
+  text-align: left;
+}
+.g-search .g-wrap .m-search .m-list .song-list .even {
+  background-color: #f7f7f7;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-info {
+  float: left;
+  height: 41px;
+  line-height: 41px;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #333;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-title {
+  width: 370px;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-title .icon {
+  color: #aaa;
+  margin-right: 4px;
+  /* font-size: 18px; */
+  font-weight: bold;
+  cursor: pointer;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-title .icon:hover {
+  color: #555;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-opr {
+  width: 100px;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-opr .icon {
+  color: #aaa;
+  margin-right: 4px;
+  /* font-size: 18px; */
+  font-weight: bold;
+  cursor: pointer;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-opr .icon:hover {
+  color: #555;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-opr .song-icon {
+  display: none;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-opr .active {
+  display: block;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-singer {
+  width: 15%;
+}
+.g-search .g-wrap .m-search .m-list .song-list .list-item .song-album {
+  width: 18%;
+}
+.g-search .g-wrap .m-search .m-list .singer-list {
+  margin-left: -20px;
+}
+.g-search .g-wrap .m-search .m-list .singer-list .singer-list-item {
+  padding: 0 0 30px 22px;
+}
+.g-search .g-wrap .m-search .m-list .singer-list .singer-list-item img {
+  height: 130px;
+  width: 130px;
+}
+.g-search .g-wrap .m-search .m-list .singer-list .singer-list-item p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+.g-search .g-wrap .m-search .m-list .albums-list {
+  margin-left: -33px;
+}
+.g-search .g-wrap .m-search .m-list .albums-list .albums-list-item {
+  background: url(/src/static/images/album-background.png) no-repeat;
+  width: 153px;
+  height: 178px;
+  background-size: contain;
+  margin: 0 0 30px 33px;
+}
+.g-search .g-wrap .m-search .m-list .albums-list .albums-list-item img {
+  height: 130px;
+  width: 130px;
+}
+.g-search .g-wrap .m-search .m-list .albums-list .albums-list-item h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.g-search .g-wrap .m-search .m-list .albums-list .albums-list-item p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+.g-search .g-wrap .m-search .m-list .play-list .even {
+  background-color: #f7f7f7;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item:hover .title {
+  width: 300px!important;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-start {
+  width: 25px;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-start .icon {
+  color: #aaa;
+  margin-right: 4px;
+  /* font-size: 18px; */
+  font-weight: bold;
+  cursor: pointer;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-start .icon:hover {
+  color: #555;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-info {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #999;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-img img {
+  height: 50px;
+  width: 50px;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-title {
+  width: 390px;
+  color: #555;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-title .title {
+  width: 100%;
+  display: inline-block;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-title .play-icon {
+  float: right;
+  display: none;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-title .play-icon .icon {
+  color: #aaa;
+  margin-right: 4px;
+  /* font-size: 18px; */
+  font-weight: bold;
+  cursor: pointer;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-title .play-icon .icon:hover {
+  color: #555;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-title .active {
+  display: block;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-amount {
+  width: 66px;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-user {
+  width: 15%;
+  color: #555;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-collect {
+  width: 100px;
+}
+.g-search .g-wrap .m-search .m-list .play-list .play-list-item .play-count {
+  width: 100px;
+}

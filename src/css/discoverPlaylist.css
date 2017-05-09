@@ -1,0 +1,27 @@
+.play-list .g-wrap .u-title {
+  height: 40px;
+  width: 900px;
+  border-bottom: 2px solid #c20c0c;
+}
+.play-list .g-wrap .u-title .menu {
+  float: left;
+  margin: 0;
+}
+.play-list .g-wrap .u-title .menu .list-menu {
+  display: inline-block;
+  height: 30px;
+  width: 90px;
+  line-height: 30px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+.play-list .g-wrap .u-title .sort {
+  float: right;
+}
+.play-list .g-wrap .list .list-item .item-img {
+  height: 140px;
+  width: 140px;
+}
