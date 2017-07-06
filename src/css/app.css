@@ -36,6 +36,12 @@ ul, ol{
 ul li{
     float: left;
 }
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
 .f-thide{
     overflow: hidden;
     text-overflow: ellipsis;

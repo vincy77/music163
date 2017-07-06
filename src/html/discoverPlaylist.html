@@ -3,11 +3,17 @@
         <div class="u-title">
             <h3 class="menu">
                 <span class="list-type">全部</span>
-                <a class="list-menu">选择分类</a>
+                <a class="list-menu" ng-click="f.chooseCate()">选择分类</a>
             </h3>
             <div class="sort">
                 <a class="hot-sort">热门</a>
                 <a class="new-sort">最新</a>
+            </div>
+        </div>
+        <div class="cate-list-box" ng-show="v.cateBox">
+            <div class="cate-title"></div>
+            <div class="cate-item">
+
             </div>
         </div>
         <ul class="list">

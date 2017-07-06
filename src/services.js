@@ -8,7 +8,7 @@ app.service('servHttp', function($http) {
                 cache: false
             }).then(function (res) {
                 console.log('get');
-                console.log(res);
+                //console.log(res);
                 return res.data;
             })
                 .catch(function (res) {

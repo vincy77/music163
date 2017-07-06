@@ -1,3 +1,6 @@
+.play-list .g-wrap {
+  min-height: 700px;
+}
 .play-list .g-wrap .u-title {
   height: 40px;
   width: 900px;
@@ -20,6 +23,32 @@
 }
 .play-list .g-wrap .u-title .sort {
   float: right;
+}
+.play-list .g-wrap .cate-list-box {
+  display: block;
+  position: absolute;
+  top: 85px;
+  left: 10px;
+  z-index: 5;
+  width: 720px;
+  height: 437px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: -3px 3px 15px #ccc;
+  border-radius: 5px;
+}
+.play-list .g-wrap .cate-list-box:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -12px;
+  left: 117px;
+  border-bottom: 12px solid #fff;
+  border-left: 12px solid rgba(0, 0, 0, 0);
+  border-right: 12px solid rgba(0, 0, 0, 0);
+}
+.play-list .g-wrap .list {
+  margin-top: 30px;
 }
 .play-list .g-wrap .list .list-item .item-img {
   height: 140px;

@@ -25,6 +25,7 @@
   position: relative;
   cursor: pointer;
   padding: 0 20px;
+  display: inline-block;
 }
 .m-topbar .m-top .m-nav .m-nav-item span {
   font-size: 14px;
@@ -48,6 +49,16 @@
 }
 .m-topbar .m-top .m-nav .active:before {
   content: none;
+}
+.m-topbar .m-top .m-nav .active:after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 40%;
+  border-bottom: 8px solid red;
+  border-left: 8px solid rgba(0, 0, 0, 0);
+  border-right: 8px solid rgba(0, 0, 0, 0);
 }
 .m-topbar .m-top .m-nav .m-nav-item:hover {
   border-left: 1px solid #111;
@@ -92,16 +103,6 @@
   position: relative;
   clear: both;
   background: url(/src/static/images/top-background-color2.png);
-}
-.m-topbar .m-subNav:before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: -8px;
-  left: 230px;
-  border-bottom: 8px solid red;
-  border-left: 8px solid rgba(0, 0, 0, 0);
-  border-right: 8px solid rgba(0, 0, 0, 0);
 }
 .m-topbar .other-nav {
   height: 5px;

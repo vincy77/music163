@@ -3,3 +3,78 @@
   width: 100%;
   background: url(/src/static/images/bg.jpg) no-repeat center 0;
 }
+.g-download .n-banner .m-carousel {
+  width: 982px;
+  margin: 0 auto;
+  position: relative;
+}
+.g-download .n-banner .m-carousel .carousel-inner .item {
+  height: 465px;
+  width: 545px;
+  margin-top: 30px;
+}
+.g-download .n-banner .m-carousel .carousel-control {
+  display: none;
+}
+.g-download .n-banner .m-carousel .carousel-indicators {
+  left: 0;
+}
+.g-download .n-banner .m-carousel .download-v {
+  top: 200px;
+  right: -30px;
+  width: 384px;
+  height: 230px;
+  position: absolute;
+}
+.g-download .n-banner .m-carousel .download-v .v-item {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 14px;
+  display: inline-block;
+  margin-right: 20px;
+  width: 170px;
+  background: url(/src/static/images/download-v.png);
+}
+.g-download .n-banner .m-carousel .download-v .v-item .v-icon {
+  font-size: 20px;
+  color: #eee;
+  padding: 0 10px;
+}
+.g-download .n-banner .m-carousel .download-v .v-item .name {
+  color: #eee;
+  padding-right: 15px;
+  font-weight: 600;
+}
+.g-download .n-banner .m-carousel .download-v .v-item .v {
+  color: #eee;
+  font-size: 12px;
+}
+.g-download .n-banner .m-carousel .download-v .v-item:hover {
+  background: url(/src/static/images/download-v2.png);
+}
+.g-download .n-dncnt {
+  background: #fff;
+  height: 437px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.g-download .n-dncnt .wrap {
+  width: 982px;
+  margin: 0 auto;
+}
+.g-download .n-dncnt .wrap .info {
+  margin-left: 30px;
+}
+.g-download .n-dncnt .wrap .info h3 {
+  font-size: 40px;
+}
+.g-download .n-dncnt .wrap .info p {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+}
+.g-download .n-dncnt .wrap .info-img {
+  line-height: 437px;
+}
+.g-download .n-dncnt2 {
+  background: #f8f8f8;
+}

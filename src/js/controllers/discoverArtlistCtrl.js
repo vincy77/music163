@@ -1,3 +1,3 @@
-app.controller('discoverArtlistCtrl', function ($scopee) {
+app.controller('discoverArtlistCtrl', function ($scope) {
     
 });

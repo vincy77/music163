@@ -23,6 +23,7 @@
         position: relative;
         cursor: pointer;
         padding: 0 20px;
+        display: inline-block;
         span{
           font-size: 14px;
           color: #ccc;
@@ -46,6 +47,16 @@
       }
       .active:before{
         content: none;
+      }
+      .active:after{
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 40%;
+        border-bottom: 8px solid red;
+        border-left: 8px solid rgba(0, 0, 0, 0);
+        border-right: 8px solid rgba(0, 0, 0, 0);
       }
       .m-nav-item:hover{
         border-left: 1px solid #111;
@@ -95,14 +106,14 @@
     background:url(/src/static/images/top-background-color2.png);
   }
   .m-subNav:before{
-    content: '';
-    position: absolute;
-    display: block;
-    top: -8px;
-    left: 230px;
-    border-bottom: 8px solid red;
-    border-left: 8px solid rgba(0, 0, 0, 0);
-    border-right: 8px solid rgba(0, 0, 0, 0);
+    //content: '';
+    //position: absolute;
+    //display: block;
+    //top: -8px;
+    //left: 230px;
+    //border-bottom: 8px solid red;
+    //border-left: 8px solid rgba(0, 0, 0, 0);
+    //border-right: 8px solid rgba(0, 0, 0, 0);
   }
   .other-nav{
     height: 5px;

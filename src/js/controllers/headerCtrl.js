@@ -1,4 +1,4 @@
-app.controller('headerCtrl', function ($scope, $state) {
+app.controller('headerCtrl', function ($rootScope, $scope, $state) {
     //变量
     $scope.v = {
         keyword: ''
@@ -7,25 +7,22 @@ app.controller('headerCtrl', function ($scope, $state) {
         search: search
     };
     function search(event) {
+        $scope.nav.current ={};
         if(event.keyCode == 13 && $scope.v.keyword){
             var url = $state.href('app.search', {keyword: $scope.v.keyword});
-            window.open(url, '_bland');
+            //window.open(url, '_bland');
+            $state.go('app.search',{ keyword: $scope.v.keyword});
         }
-
     }
     $scope.nav = {
         data: [{key: 0, value: '发现音乐', url: 'app.discover.music'}, {
                 key: 1, value: '我的音乐', url: 'app.myMusic'}, {
-                key: 2, value: '朋友', url: ''}, {
-                key: 3, value: '商城', url:''}, {
-                key: 4, value: '音乐人', url: ''}, {
+                key: 2, value: '朋友', url: 'app.myMusic'}, {
+                key: 3, value: '商城', url:'http://music.163.com/store/product'}, {
+                key: 4, value: '音乐人', url: 'http://music.163.com/nmusician/web/index'}, {
                 key: 5, value: '下载客户端', url: 'app.download'}
         ],
-        current:  {
-            key: 0,
-            value: '发现音乐',
-            url: 'app.fundMusic'
-        },
+        current:  {},
         change: changeNav
     };
     $scope.subNav = {
@@ -38,22 +35,33 @@ app.controller('headerCtrl', function ($scope, $state) {
         ],
         current:  {
             key: 0,
-            value: '发现音乐'
+            value: '推荐'
         },
         change: changeSubNav
     };
     function changeNav(index) {
         $scope.nav.current = $scope.nav.data[index];
-        console.log($scope.nav.current);
+        window.sessionStorage['nav'] = JSON.stringify($scope.nav.current);
 
-        $state.go($scope.nav.current.url);
+        //$state.go($scope.nav.current.url);
     }
     function changeSubNav(index) {
-
         $scope.subNav.current = $scope.subNav.data[index];
-        $state.go($scope.subNav.current.url);
+        //$state.go($scope.subNav.current.url);
 
     }
+    (function () {
+        //console.log(JSON.parse(window.sessionStorage['nav']));
+        if(window.sessionStorage['nav']){
+            $scope.nav.current = JSON.parse(window.sessionStorage['nav']);
+        }else{
+            $scope.nav.current = {
+                key: 0,
+                value: '发现音乐',
+                url: 'app.fundMusic'
+            };
+        }
 
+    })();
 
 });
